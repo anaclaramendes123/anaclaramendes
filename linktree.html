@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" type="image/x-icon" href="imagens/linktreeicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Clara Mendes | Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+.link-icon {
+    font-size: 24px;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #666;
+}
+        .container {
+            max-width: 480px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-pic-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            background-color: #f0f0f0;
+        }
+
+        .profile-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .profile-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .profile-bio {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-decoration: none;
+            padding: 18px 24px;
+            border-radius: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(37, 117, 252, 0.2);
+            border: none;
+            cursor: pointer;
+        }
+
+        .link-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(37, 117, 252, 0.3);
+        }
+
+        .link-button.instagram {
+            background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+            box-shadow: 0 5px 15px rgba(131, 58, 180, 0.2);
+        }
+
+        .link-button.instagram:hover {
+            box-shadow: 0 10px 25px rgba(131, 58, 180, 0.3);
+        }
+
+        .link-button.website {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            box-shadow: 0 5px 15px rgba(17, 153, 142, 0.2);
+        }
+
+        .link-button.website:hover {
+            box-shadow: 0 10px 25px rgba(17, 153, 142, 0.3);
+        }
+
+        .link-icon {
+            font-size: 24px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            color: #666;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            color: #6a11cb;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .profile-card {
+                padding: 25px 20px;
+            }
+            
+            .profile-pic-container {
+                width: 130px;
+                height: 130px;
+            }
+            
+            .profile-name {
+                font-size: 24px;
+            }
+            
+            .link-button {
+                padding: 16px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-pic-container">
+                <!-- 
+                    PARA USAR SUA PRÓPRIA FOTO:
+                    1. Substitua a URL abaixo pela URL da sua foto online
+                    2. Ou se quiser usar uma foto do seu computador, veja as instruções no final do código
+                -->
+                <img src="imagens/linktree.jpg" 
+                     alt="Foto de perfil da Ana Clara Mendes" 
+                     class="profile-pic">
+            </div>
+            <h1 class="profile-name">Ana Clara Mendes</h1>
+            <p class="profile-bio">Desenvolvedora e criadora de conteúdo digital. Explore meus links abaixo!</p>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/mendes.anaclaraa/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://anaclaramendes.vercel.app/" target="_blank" class="social-icon">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="links-container">
+            <a href="https://www.instagram.com/mendes.anaclaraa/" target="_blank" class="link-button instagram">
+                <i class="fab fa-instagram link-icon"></i>
+                Instagram
+            </a>
+            
+            <a href="https://anaclaramendes.vercel.app/" target="_blank" class="link-button website">
+                <i class="fas fa-external-link-alt link-icon"></i>
+                Meu Site
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 Ana Clara Mendes. Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+    <script>
+        // Adicionando interatividade aos botões
+        document.querySelectorAll('.link-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Animação de clique
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+        
+        // Efeito de digitação para a bio
+        const bioText = "Desenvolvedora e criadora de conteúdo digital. Explore meus links abaixo!";
+        let i = 0;
+        const speed = 50;
+        
+        function typeWriter() {
+            if (i < bioText.length) {
+                document.querySelector(".profile-bio").innerHTML += bioText.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        
+        // Iniciar efeito de digitação após carregar a página
+        window.onload = function() {
+            document.querySelector(".profile-bio").innerHTML = "";
+            setTimeout(typeWriter, 500);
+        };
+    </script>
+</body>
+</html>
