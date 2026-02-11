@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendes Exclusive | Conteúdo Adulto Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/favicon.ico" type="images"> type="image/x-icon"
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Ana Clara<span>Exclusive</span></a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#preview">Prévia</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact" class="btn-nav">Contato</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Conteúdo <span class="highlight">Exclusivo</span> & Premium</h1>
+                    <p class="hero-subtitle">Experiências íntimas e personalizadas para quem busca o melhor conteúdo feminino adulto</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>2K+</h3>
+                            <p>Clientes Satisfeitos</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Conteúdos Exclusivos</p>
+                        </div>
+                        <div class="stat">
+                            <h3>4.9</h3>
+                            <p>Avaliação Média</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#plans" class="btn btn-primary">Ver Planos Exclusivos</a>
+                    
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <i class="fas fa-lock"></i> Pagamento 100% Seguro
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-user-shield"></i> Totalmente Anônimo
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-sync-alt"></i> Cancele Quando Quiser
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="imagens/foto.jpg" alt="Ana Clara Exclusive" class="profile-img">
+                        <div class="image-badge">
+                            <i class="fas fa-crown"></i> CONTEÚDO PREMIUM
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="imagens/foto1.jpg" alt="Sobre Ana Clara">
+                </div>
+                <div class="about-text">
+                    <h3>Olá, eu sou a Ana Clara</h3>
+                    <p>Sou uma criadora de conteúdo adulto premium especializada em experiências íntimas e personalizadas. Meu foco é proporcionar momentos únicos através de conteúdos exclusivos feitos com atenção aos detalhes.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-camera"></i>
+                            <h4>Conteúdo de Alta Qualidade</h4>
+                            <p>Fotos e vídeos profissionais em 4K</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Atendimento Personalizado</h4>
+                            <p>Interação direta e conteúdos sob medida</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Privacidade Garantida</h4>
+                            <p>Seus dados sempre protegidos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans">
+        <div class="container">
+            <h2 class="section-title">Escolha Seu Plano</h2>
+            <p class="section-subtitle">Ofertas especiais por tempo limitado</p>
+            
+            <!-- Timer de Oferta -->
+            <div class="offer-timer">
+                <div class="timer-content">
+                    <i class="fas fa-clock"></i>
+                    <p>OFERTA TERMINA EM:</p>
+                    <div id="countdown" class="countdown">
+                        <span id="hours">23</span>:<span id="minutes">59</span>:<span id="seconds">59</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab de Categorias -->
+            <div class="plan-categories">
+                <button class="category-btn active" data-category="fotos">📸 Fotos & Vídeos</button>
+                <button class="category-btn" data-category="personalizados">🎬 Personalizados</button>
+                <button class="category-btn" data-category="acessos">👑 Acessos Exclusivos</button>
+            </div>
+            
+            <!-- Planos de Fotos & Vídeos (Categoria Ativa) -->
+            <div class="plans-grid active" id="fotos-plans">
+                <!-- PACOTE INICIAL -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>PACOTE INICIAL</h3>
+                        <div class="price">R$ <span>19,90</span></div>
+                        <p class="plan-subtitle">Para quem quer começar</p>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 50 fotos em alta qualidade</li>
+                        <li><i class="fas fa-check"></i> 5 vídeos curtos (2-3 min)</li>
+
+                    </ul>
+                    
+                   <a href="https://go.zeroonepay.com.br/3tnudibprd" 
+   class="btn btn-buy" 
+   data-plan="inicial"
+   target="_self">
+    Comprar Agora <i class="fas fa-arrow-right"></i>
+</a>
+                    </a>
+                    
+                    <div class="plan-tag">Mais Vendido</div>
+                </div>
+                
+                <!-- PACOTE PREMIUM -->
+                <div class="plan-card popular">
+                    <div class="plan-header">
+                        <h3>PACOTE PREMIUM</h3>
+                        <div class="price">R$ <span>49,90</span></div>
+                        <p class="plan-subtitle">O mais escolhido</p>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 150 fotos </li>
+                        <li><i class="fas fa-check"></i> 15 vídeos </li>
+                        <li><i class="fas fa-check"></i> Bônus: 1 mês no grupo VIP</li>
+                    </ul>
+                    
+                    <!-- GATEWAY LINK 2 - Substituir pelo seu link real -->
+                    <a href="https://go.zeroonepay.com.br/j2cnooc2d3" class="btn btn-buy" data-plan="premium">
+                        Comprar Agora <i class="fas fa-arrow-right"></i>
+                    </a>
+                    
+                    <div class="plan-tag">Melhor Custo-Benefício</div>
+                </div>
+                
+                <!-- PACOTE COMPLETO -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>PACOTE COMPLETO</h3>
+                        <div class="price">R$ <span>79,90</span></div>
+                        <p class="plan-subtitle">Experiência completa</p>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 300 fotos </li>
+                        <li><i class="fas fa-check"></i> 30 vídeos</li>
+                        <li><i class="fas fa-check"></i> 3 vídeos exclusivos</li>
+                        <li><i class="fas fa-check"></i> Acesso vitalício + 3 meses</li>
+                        <li><i class="fas fa-check"></i> Bônus: Grupo VIP + WhatsApp</li>
+                    </ul>
+                    
+                    <!-- GATEWAY LINK 3 - Substituir pelo seu link real -->
+                    <a href="https://go.zeroonepay.com.br/pyzxjm7uh4" class="btn btn-buy" data-plan="completo">
+                        Comprar Agora <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Planos Personalizados (Categoria Ocultada) -->
+            <div class="plans-grid" id="personalizados-plans" style="display: none;">
+                <!-- PERSONALIZADO BÁSICO -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>PERSONALIZADO BÁSICO</h3>
+                        <div class="price">R$ <span>29,90</span></div>
+                        <p class="plan-subtitle">Vídeo com seu nome</p>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Vídeo de 30 segundos</li>
+                        <li><i class="fas fa-check"></i> Com seu nome mencionado</li>
+                        <li><i class="fas fa-check"></i> 1 tema à sua escolha</li>
+                        <li><i class="fas fa-check"></i> Prazo: 5 dias úteis</li>
+                        <li><i class="fas fa-check"></i> Envio via link privado</li>
+                    </ul>
+                    
+                    <!-- GATEWAY LINK 4 - Substituir pelo seu link real -->
+                    <a href="https://go.zeroonepay.com.br/hkd27bvdxi" class="btn btn-buy" data-plan="personalizado-basico">
+                        Comprar Agora <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- PERSONALIZADO PREMIUM -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>PERSONALIZADO PREMIUM</h3>
+                        <div class="price">R$ <span>59,90</span></div>
+                        <p class="plan-subtitle">Vídeo detalhado</p>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Vídeo de 2 minutos</li>
+                        <li><i class="fas fa-check"></i> Com seu nome mencionado</li>
+                        <li><i class="fas fa-check"></i> Até 2 temas/fetiches</li>
+                        <li><i class="fas fa-check"></i> Prazo: 3 dias úteis</li>
+                    </ul>
+                    
+                    <!-- GATEWAY LINK 5 - Substituir pelo seu link real -->
+                    <a href="https://go.zeroonepay.com.br/pbfz6up7oj" class="btn btn-buy" data-plan="personalizado-premium">
+                        Comprar Agora <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Acessos Exclusivos (Categoria Ocultada) -->
+            <div class="plans-grid" id="acessos-plans" style="display: none;">
+             
+                      <center><a href="#" class="logo">EM       <span>  BREVE</span></a> </center> 
+            
+                    
+                  
+                    
+
+    <!-- Preview Section -->
+    <section id="preview" class="preview">
+        <div class="container">
+            <h2 class="section-title">Prévia do Conteúdo</h2>
+            <p class="section-subtitle">Amostra do que você vai encontrar</p>
+            
+            <div class="preview-gallery">
+                <div class="preview-item">
+                    <img src="imagens/preview.jpg" alt="Preview 1">
+                    <div class="preview-overlay">
+                        <span class="preview-tag">Exclusivo</span>
+                    </div>
+                </div>
+                <div class="preview-item">
+                    <img src="imagens/preview1.jpg" alt="Preview 2">
+                    <div class="preview-overlay">
+                        <span class="preview-tag">Premium</span>
+                    </div>
+                </div>
+                <div class="preview-item">
+                    <img src="imagens/preview2.jpg" alt="Preview 3">
+                    <div class="preview-overlay">
+                        <span class="preview-tag">Novo</span>
+                    </div>
+                </div>
+                <div class="preview-item">
+                    <img src="imagens/preview3.jpg" alt="Preview 4">
+                    <div class="preview-overlay">
+                        <span class="preview-tag">VIP</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="preview-warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Atenção: Conteúdo explícito para maiores de 18 anos. As imagens acima são apenas prévias censuradas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Depoimentos</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-avatar">M</div>
+                        <div class="client-info">
+                            <h4>Marcos, 32</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"A qualidade do conteúdo é absurda! Vale cada centavo. A Ana Clara entrega muito mais do que promete."</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-avatar">R</div>
+                        <div class="client-info">
+                            <h4>Ricardo, 41</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"O vídeo personalizado que fiz foi perfeito! Ela atendeu todos os detalhes que pedi. Recomendo demais!"</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-avatar">C</div>
+                        <div class="client-info">
+                            <h4>Carlos, 28</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"O grupo VIP do Telegram é incrível! Conteúdo novo todo dia e a interação é muito boa. Melhor investimento!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Como funciona o pagamento?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Utilizamos gateways de pagamento 100% seguros. Você pode pagar com cartão de crédito, débito ou PIX. A compra é processada instantaneamente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Quando recebo o conteúdo?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Imediatamente após a confirmação do pagamento, você recebe acesso à área de membros ou o conteúdo é enviado conforme o combinado.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>É seguro e discreto?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! A descrição na sua fatura será genérica e não identificável. Seus dados são protegidos e não compartilhamos informações com terceiros.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Posso cancelar quando quiser?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! As assinaturas são mensais e você pode cancelar a qualquer momento sem multa ou complicações.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Não Perca a Oferta Especial!</h2>
+                <p class="cta-subtitle">Últimas horas com preços promocionais</p>
+                
+                <div class="cta-timer">
+                    <div class="cta-timer-item">
+                        <span id="cta-hours">23</span>
+                        <small>Horas</small>
+                    </div>
+                    <div class="cta-timer-item">
+                        <span id="cta-minutes">59</span>
+                        <small>Minutos</small>
+                    </div>
+                    <div class="cta-timer-item">
+                        <span id="cta-seconds">59</span>
+                        <small>Segundos</small>
+                    </div>
+                </div>
+                
+                <a href="#plans" class="btn btn-primary btn-large">
+                    Quero Meu Plano Agora! <i class="fas fa-bolt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ana Clara<span>Exclusive</span></h3>
+                    <p>Conteúdo adulto premium e personalizado para uma experiência única.</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#plans">Planos</a></li>
+                        <li><a href="#preview">Prévia</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:contato@Ana Claraexclusive.com">Contato por Email</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Pagamentos Aceitos</h4>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-pix"></i>
+                    </div>
+                    <p class="disclaimer">+18 apenas. Todos os direitos reservados.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ana Clara Exclusive. Conteúdo para maiores de 18 anos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="gateway.js"></script>
+</body>
+</html>
